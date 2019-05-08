@@ -1,18 +1,32 @@
 {
   "name": "ts-webauthn",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/ts-webauthn.umd.js",
+  "module": "dist/ts-webauthn.es5.js",
+  "typings": "dist/types/ts-webauthn.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": "https://github.com/danoph/ts-webauthn",
   "author": "Daniel Errante",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "build:dist": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src"
   },
   "dependencies": {
-    "cbor-js": "^0.1.0"
+    "cbor-js": "^0.1.0",
+    "rollup-plugin-typescript2": "^0.21.0"
   },
   "devDependencies": {
+    "lodash.camelcase": "^4.3.0",
+    "rollup": "^1.11.3",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-sourcemaps": "^0.4.2",
     "tslib": "^1.9.0",
+    "typedoc": "^0.14.2",
     "typescript": "^3.4.5"
   }
 }
