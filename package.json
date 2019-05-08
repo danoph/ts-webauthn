@@ -1,0 +1,18 @@
+{
+  "name": "ts-webauthn",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/danoph/ts-webauthn",
+  "author": "Daniel Errante",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "cbor-js": "^0.1.0"
+  },
+  "devDependencies": {
+    "tslib": "^1.9.0",
+    "typescript": "^3.4.5"
+  }
+}
