@@ -1,6 +1,6 @@
 {
   "name": "ts-webauthn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/ts-webauthn.umd.js",
   "module": "dist/ts-webauthn.es5.js",
   "typings": "dist/types/ts-webauthn.d.ts",
